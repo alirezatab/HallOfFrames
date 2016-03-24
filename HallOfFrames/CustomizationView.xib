@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UIView"/>
@@ -12,16 +12,16 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <visualEffectView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zfs-7J-2p5">
-                    <rect key="frame" x="59" y="133" width="291" height="428"/>
+                    <rect key="frame" x="150" y="150" width="300" height="300"/>
                     <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" id="N5l-MC-9up">
-                        <rect key="frame" x="0.0" y="0.0" width="291" height="428"/>
+                        <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="zlX-YY-xvC">
-                                <rect key="frame" x="50" y="100" width="191" height="228"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="zlX-YY-xvC">
+                                <rect key="frame" x="50" y="50" width="200" height="200"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2zL-2j-NdL">
-                                        <rect key="frame" x="0.0" y="0.0" width="191" height="42"/>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2zL-2j-NdL">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="42"/>
                                         <color key="backgroundColor" red="1" green="0.0001922522367" blue="0.18865488750000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -30,8 +30,8 @@
                                             <action selector="onButtonPress:" destination="iN0-l3-epB" eventType="touchUpInside" id="NZx-Kb-hBZ"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2iL-qN-uZy">
-                                        <rect key="frame" x="0.0" y="93" width="191" height="42"/>
+                                    <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2iL-qN-uZy">
+                                        <rect key="frame" x="0.0" y="79" width="200" height="42"/>
                                         <color key="backgroundColor" red="0.1762289742" green="1" blue="0.0015390543939999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -40,8 +40,8 @@
                                             <action selector="onButtonPress:" destination="iN0-l3-epB" eventType="touchUpInside" id="d0J-Cr-kU6"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f5b-Re-FP7">
-                                        <rect key="frame" x="0.0" y="186" width="191" height="42"/>
+                                    <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f5b-Re-FP7">
+                                        <rect key="frame" x="0.0" y="158" width="200" height="42"/>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -56,19 +56,36 @@
                         <constraints>
                             <constraint firstItem="zlX-YY-xvC" firstAttribute="leading" secondItem="N5l-MC-9up" secondAttribute="leading" constant="50" id="5s9-sX-9Xs"/>
                             <constraint firstAttribute="trailing" secondItem="zlX-YY-xvC" secondAttribute="trailing" constant="50" id="ERs-WQ-wC7"/>
-                            <constraint firstAttribute="bottom" secondItem="zlX-YY-xvC" secondAttribute="bottom" constant="100" id="Eup-ys-ads"/>
-                            <constraint firstItem="zlX-YY-xvC" firstAttribute="top" secondItem="N5l-MC-9up" secondAttribute="top" constant="100" id="jMs-KX-KGC"/>
+                            <constraint firstAttribute="bottom" secondItem="zlX-YY-xvC" secondAttribute="bottom" constant="50" id="Eup-ys-ads"/>
+                            <constraint firstItem="zlX-YY-xvC" firstAttribute="top" secondItem="N5l-MC-9up" secondAttribute="top" constant="50" id="jMs-KX-KGC"/>
                         </constraints>
                     </view>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="300" id="T5G-8M-weQ"/>
+                        <constraint firstAttribute="height" constant="300" id="bdM-QP-Yzy"/>
+                    </constraints>
                     <blurEffect style="light"/>
                 </visualEffectView>
             </subviews>
             <constraints>
                 <constraint firstItem="zfs-7J-2p5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="133" id="3nG-dw-KTP"/>
                 <constraint firstAttribute="bottom" secondItem="zfs-7J-2p5" secondAttribute="bottom" constant="39" id="5ny-5a-ORd"/>
+                <constraint firstItem="zfs-7J-2p5" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="9I9-5D-Kfi"/>
+                <constraint firstItem="zfs-7J-2p5" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="dzo-fF-P4d"/>
                 <constraint firstItem="zfs-7J-2p5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="59" id="ie9-Up-9tw"/>
                 <constraint firstAttribute="trailing" secondItem="zfs-7J-2p5" secondAttribute="trailing" constant="250" id="vWU-ab-kQI"/>
             </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="3nG-dw-KTP"/>
+                    <exclude reference="5ny-5a-ORd"/>
+                    <exclude reference="ie9-Up-9tw"/>
+                    <exclude reference="vWU-ab-kQI"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="blurView" destination="zfs-7J-2p5" id="3nk-Ih-y82"/>
+            </connections>
         </view>
     </objects>
 </document>

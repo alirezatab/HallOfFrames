@@ -14,5 +14,6 @@
 
 @interface CustomView : UIView
 @property (nonatomic, assign) id<CustomViewDelegate> customViewDelegate;
+@property (weak, nonatomic) IBOutlet UIVisualEffectView *blurView;
 
 @end

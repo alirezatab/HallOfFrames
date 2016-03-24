@@ -69,12 +69,12 @@
 		C200836C1CA3403000E08C2D /* HallOfFrames */ = {
 			isa = PBXGroup;
 			children = (
+				C20083731CA3403000E08C2D /* ViewController.h */,
+				C20083741CA3403000E08C2D /* ViewController.m */,
 				221BCF901CA39B0A00E97278 /* Picture.h */,
 				221BCF911CA39B0A00E97278 /* Picture.m */,
 				221BCF921CA39B0A00E97278 /* PictureCollectionViewCell.h */,
 				221BCF931CA39B0A00E97278 /* PictureCollectionViewCell.m */,
-				C20083731CA3403000E08C2D /* ViewController.h */,
-				C20083741CA3403000E08C2D /* ViewController.m */,
 				C20083871CA343B400E08C2D /* CustomizationView.xib */,
 				C20083891CA343DB00E08C2D /* CustomView.h */,
 				C200838A1CA343DB00E08C2D /* CustomView.m */,

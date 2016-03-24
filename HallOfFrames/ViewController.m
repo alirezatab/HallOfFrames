@@ -56,6 +56,9 @@
     self.customView = [[[NSBundle mainBundle] loadNibNamed:@"CustomizationView" owner:self options:nil] objectAtIndex:0];
     self.customView.customViewDelegate = self;
     self.lastSelectedIndexPath = indexPath;
+    self.customView.frame = self.view.frame;
+    self.customView.blurView.layer.cornerRadius = 30;
+    self.customView.blurView.clipsToBounds = YES;
     [self.view addSubview:self.customView];
 }
 
