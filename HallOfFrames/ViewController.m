@@ -17,6 +17,11 @@
 @property UIColor *color;
 @property NSMutableArray *pictureArray;
 @property NSIndexPath *lastSelectedIndexPath;
+@property UIColor *colorIfCancelled;
+@property float redSliderFloat;
+@property float blueSliderFloat;
+@property float greenSliderFloat;
+
 @end
 
 @implementation ViewController
@@ -36,19 +41,64 @@
     self.pictureArray = [[NSMutableArray alloc]initWithObjects:picture1, picture2, picture3, picture4, picture5, picture6, picture7, nil];
 }
 
+
 -(void)colorButtonPress:(UIButton *)button {
+   
+    Picture *picture = [self.pictureArray objectAtIndex:self.lastSelectedIndexPath.row];
+        
     if ([button.titleLabel.text isEqualToString:@"Red"]) {
         self.color = [UIColor redColor];
-    }else if ([button.titleLabel.text isEqualToString:@"Green"]){
-        self.color = [UIColor greenColor];
-    }else{
-        self.color = [UIColor blueColor];
-    }
-    Picture *picture = [self.pictureArray objectAtIndex:self.lastSelectedIndexPath.row];
-    picture.frameColor = self.color;
-    [self.collectionView reloadData];
+        picture.frameColor = self.color;
+        [self.collectionView reloadData];
 
-    [self.customView removeFromSuperview];
+        
+    } else if ([button.titleLabel.text isEqualToString:@"Green"]) {
+        self.color = [UIColor greenColor];
+        picture.frameColor = self.color;
+        [self.collectionView reloadData];
+
+
+    } else if ([button.titleLabel.text isEqualToString:@"Blue"]) {
+        self.color = [UIColor blueColor];
+        picture.frameColor = self.color;
+        [self.collectionView reloadData];
+
+
+    } else if ([button.titleLabel.text isEqualToString:@"Done"]) {
+        [self.customView removeFromSuperview];
+
+        
+    } else if ([button.titleLabel.text isEqualToString:@"Cancel"]) {
+        picture.frameColor = self.colorIfCancelled;
+        [self.collectionView reloadData];
+        [self.customView removeFromSuperview];
+    } else {
+        
+    }
+    
+}
+
+-(void)sliderChanged:(UISlider *)slider {
+    Picture *picture = [self.pictureArray objectAtIndex:self.lastSelectedIndexPath.row];
+    
+    if ([slider.accessibilityLabel isEqualToString:@"Red"]) {
+        slider.thumbTintColor  = [UIColor colorWithHue:1.0 saturation:(slider.value) brightness:1.0 alpha:1.0];
+        self.redSliderFloat = slider.value;
+        
+    } else if ([slider.accessibilityLabel isEqualToString:@"Green"]) {
+        slider.thumbTintColor  = [UIColor colorWithHue:(100/360.f) saturation:(slider.value) brightness:1.0 alpha:1.0];
+        self.greenSliderFloat = slider.value;
+        
+    } else if ([slider.accessibilityLabel isEqualToString:@"Blue"]) {
+        slider.thumbTintColor  = [UIColor colorWithHue:(215 /360.f) saturation:(slider.value) brightness:1.0 alpha:1.0];
+        self.blueSliderFloat = slider.value;
+    }
+        
+    picture.frameColor = [UIColor colorWithRed:self.redSliderFloat green:self.greenSliderFloat blue:self.blueSliderFloat alpha:1];
+    [self.collectionView reloadData];
+    
+    
+
 }
 
 
@@ -60,6 +110,10 @@
     self.customView.blurView.layer.cornerRadius = 30;
     self.customView.blurView.clipsToBounds = YES;
     [self.view addSubview:self.customView];
+    
+    //ensures that whatever happen in the popup, the color set can be reversed on cancel
+     Picture *picture = [self.pictureArray objectAtIndex:self.lastSelectedIndexPath.row];
+    self.colorIfCancelled = picture.frameColor;
 }
 
 -(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{

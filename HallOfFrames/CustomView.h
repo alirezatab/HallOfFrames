@@ -10,6 +10,7 @@
 @protocol CustomViewDelegate
 @optional
 -(void) colorButtonPress:(UIButton *)button;
+-(void) sliderChanged:(UISlider *)slider;
 @end
 
 @interface CustomView : UIView

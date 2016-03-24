@@ -14,5 +14,9 @@
     [self.customViewDelegate colorButtonPress:sender];
 }
 
+- (IBAction)onSliderChanged:(UISlider *)sender {
+    [self.customViewDelegate sliderChanged:sender];
+
+}
 
 @end
