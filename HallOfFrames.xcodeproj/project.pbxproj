@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		221BCF941CA39B0A00E97278 /* Picture.m in Sources */ = {isa = PBXBuildFile; fileRef = 221BCF911CA39B0A00E97278 /* Picture.m */; };
+		221BCF951CA39B0A00E97278 /* PictureCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 221BCF931CA39B0A00E97278 /* PictureCollectionViewCell.m */; };
 		C200836F1CA3403000E08C2D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C200836E1CA3403000E08C2D /* main.m */; };
 		C20083721CA3403000E08C2D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C20083711CA3403000E08C2D /* AppDelegate.m */; };
 		C20083751CA3403000E08C2D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C20083741CA3403000E08C2D /* ViewController.m */; };
@@ -15,11 +17,13 @@
 		C200837D1CA3403000E08C2D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C200837B1CA3403000E08C2D /* LaunchScreen.storyboard */; };
 		C20083881CA343B400E08C2D /* CustomizationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C20083871CA343B400E08C2D /* CustomizationView.xib */; };
 		C200838B1CA343DB00E08C2D /* CustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = C200838A1CA343DB00E08C2D /* CustomView.m */; };
-		C20083941CA3702E00E08C2D /* Picture.m in Sources */ = {isa = PBXBuildFile; fileRef = C20083931CA3702E00E08C2D /* Picture.m */; };
-		C200839A1CA371CF00E08C2D /* PictureCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C20083991CA371CF00E08C2D /* PictureCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		221BCF901CA39B0A00E97278 /* Picture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Picture.h; sourceTree = "<group>"; };
+		221BCF911CA39B0A00E97278 /* Picture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Picture.m; sourceTree = "<group>"; };
+		221BCF921CA39B0A00E97278 /* PictureCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureCollectionViewCell.h; sourceTree = "<group>"; };
+		221BCF931CA39B0A00E97278 /* PictureCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureCollectionViewCell.m; sourceTree = "<group>"; };
 		C200836A1CA3403000E08C2D /* HallOfFrames.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HallOfFrames.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C200836E1CA3403000E08C2D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C20083701CA3403000E08C2D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -33,10 +37,6 @@
 		C20083871CA343B400E08C2D /* CustomizationView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomizationView.xib; sourceTree = "<group>"; };
 		C20083891CA343DB00E08C2D /* CustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomView.h; sourceTree = "<group>"; };
 		C200838A1CA343DB00E08C2D /* CustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomView.m; sourceTree = "<group>"; };
-		C20083921CA3702E00E08C2D /* Picture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Picture.h; path = ../Picture.h; sourceTree = "<group>"; };
-		C20083931CA3702E00E08C2D /* Picture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Picture.m; path = ../Picture.m; sourceTree = "<group>"; };
-		C20083981CA371CF00E08C2D /* PictureCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PictureCollectionViewCell.h; path = ../PictureCollectionViewCell.h; sourceTree = "<group>"; };
-		C20083991CA371CF00E08C2D /* PictureCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PictureCollectionViewCell.m; path = ../PictureCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,10 +69,10 @@
 		C200836C1CA3403000E08C2D /* HallOfFrames */ = {
 			isa = PBXGroup;
 			children = (
-				C20083921CA3702E00E08C2D /* Picture.h */,
-				C20083931CA3702E00E08C2D /* Picture.m */,
-				C20083981CA371CF00E08C2D /* PictureCollectionViewCell.h */,
-				C20083991CA371CF00E08C2D /* PictureCollectionViewCell.m */,
+				221BCF901CA39B0A00E97278 /* Picture.h */,
+				221BCF911CA39B0A00E97278 /* Picture.m */,
+				221BCF921CA39B0A00E97278 /* PictureCollectionViewCell.h */,
+				221BCF931CA39B0A00E97278 /* PictureCollectionViewCell.m */,
 				C20083731CA3403000E08C2D /* ViewController.h */,
 				C20083741CA3403000E08C2D /* ViewController.m */,
 				C20083871CA343B400E08C2D /* CustomizationView.xib */,
@@ -169,9 +169,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C20083941CA3702E00E08C2D /* Picture.m in Sources */,
-				C200839A1CA371CF00E08C2D /* PictureCollectionViewCell.m in Sources */,
 				C200838B1CA343DB00E08C2D /* CustomView.m in Sources */,
+				221BCF951CA39B0A00E97278 /* PictureCollectionViewCell.m in Sources */,
+				221BCF941CA39B0A00E97278 /* Picture.m in Sources */,
 				C20083751CA3403000E08C2D /* ViewController.m in Sources */,
 				C20083721CA3403000E08C2D /* AppDelegate.m in Sources */,
 				C200836F1CA3403000E08C2D /* main.m in Sources */,
